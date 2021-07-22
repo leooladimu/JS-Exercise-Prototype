@@ -127,10 +127,15 @@ Baby.prototype.play = function() {
 /* 
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. global obj binding -- global scope it'll give you a list of everything -- it's an error
+  2. implicit binding — applies to objects with methods
+// — when the function’s invoked, what’s on the left of the dot is what ‘this’ refers to
+  3.new binding 
+— ‘new’ keyword constructs new obj and ‘this’ points to it
+— when func is invoked as a constructor func ‘this’ points to the newly created obj
+  4. Explicit binding -- .call — invokes func immediately, pass in argumnets 1 by 1
+.apply — ‘’, pass in args as an array
+.bind — pass args 1 by 1, but it doesn’t invoke func immediately, returns brand new func that can be invoked later
 */
 
 
